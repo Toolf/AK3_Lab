@@ -16,7 +16,6 @@ vtable:
     .word __hard_reset__+1
     .size vtable, .-vtable
 __hard_reset__:
-    ldr r0, =__stack_start
-    mov sp, r0
-    b __hard_reset__
-    
+    bl lab1
+    _loop: b _loop
+    .size __hard_reset__, .-__hard_reset__
