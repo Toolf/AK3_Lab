@@ -18,10 +18,10 @@ bootload:
 	ldr r1, =image
 	ldr r2, =_ram_start
 loop:
-        ldm r1!, {r3, r4, r5}
-        stm r2!, {r3,r4,r5}
-        cmp r0, r1
-        bhi loop
+	ldm r1!, {r3, r4, r5}
+	stm r2!, {r3,r4,r5}
+	cmp r0, r1
+	bhi loop
 bl newline
 ldr r0, =str_boot_end
 bl dbgput_line
