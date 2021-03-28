@@ -19,7 +19,7 @@ bootload:
 	ldr r2, =_ram_start
 loop:
 	ldm r1!, {r3, r4, r5}
-	stm r2!, {r3,r4,r5}
+	stm r2!, {r3, r4, r5}
 	cmp r0, r1
 	bhi loop
 bl newline

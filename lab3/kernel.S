@@ -20,7 +20,6 @@ vtable_kernel:
 
 .section .rodata
     start: .asciz "kernel started!\n"
-    finish: .asciz "kernel finish!\n"
     final: .asciz "Value in register #3: "
 .section .text
 __kernel_reset__:
